@@ -28,7 +28,7 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--color-de-fondo):
+    color: var(--color-de-link);
 }
 
 h2,
@@ -44,7 +44,6 @@ p {
     align-items: center;
     padding: .5rem;
     background-color: var(--color-de-fondo-menu);
-    justify-content: space-between;
     gap: 5vw;
 }
 
@@ -75,7 +74,7 @@ p {
 }
 
 .navegacion__elemento a {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* ------------------------------ Sección Presentación ------------------------------*/
@@ -312,11 +311,10 @@ footer {
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .cabecera {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         margin: 2rem;
     }
 
@@ -371,13 +369,13 @@ footer {
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     .aficiones__lista {
         margin: 2rem;
         gap: 2rem;
-    
+
     }
-    
+
     .aficiones__elemento {
         min-width: 25vw;
         display: flex;
@@ -386,13 +384,13 @@ footer {
         justify-content: center;
         flex-grow: 1;
         margin: 0;
-    
-    
+
+
         height: 150px;
         width: 150px;
         background-color: var(--color-de-fondo-secundario);
     }
-    
+
     .aficiones__icono {
         width: 10%;
     }
@@ -405,7 +403,7 @@ footer {
         margin: 2rem;
         height: 15vh;
     }
-    
+
     .formacion__nombre,
     .formacion__detalle {
         margin: 0 2rem;
@@ -418,7 +416,7 @@ footer {
     .proyectos__showcase__imagen {
         margin: 0;
     }
-    
+
     .proyectos__nombre,
     .proyectos__descripcion,
     .proyectos__area-botones {
@@ -447,12 +445,173 @@ footer {
 /* Pantallas grandes */
 @media (min-width: 1025px) {
 
-    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
-    .cabecera__titulo {
-        font-size: 1.8rem;
+    p {
+        font-size: 1.2rem;
     }
 
     .navegacion__elemento a {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
+
+    .cabecera {
+        flex-direction: row;
+        align-items: center;
+        margin: 5vw;
+        gap: 1vw;
+    }
+
+    .cabecera__correo {
+        display: none;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 2rem;
+    }
+
+    .navegacion {
+        display: flex;
+    }
+
+    .navegacion__lista {
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+        transition: all ease 0.3s;
+    }
+
+    .navegacion__elemento a:hover {
+        color: var(--color-resalte);
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 5vw;
+    }
+
+    .presentacion__titulo {
+        font-size: 3rem;
+    }
+
+    .presentacion__foto {
+        height: 20rem;
+        width: 20rem;
+        margin-right: 5vw;
+    }
+
+    .sobre-mi {
+        margin: 5vw;
+    }
+
+    .habilidades {
+        margin: 5vw;
+    }
+
+    .habilidades__lista {
+        gap: 2rem;
+    }
+
+    .habilidades__elemento {
+        margin-left: 0;
+        margin-right: 0;
+        height: 25vh;
+    }
+
+    .habilidades__icono {
+        width: 10%;
+    }
+
+    .aficiones__lista {
+        margin: 5vw;
+        gap: 2rem;
+
+    }
+
+    .aficiones__elemento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        margin: 0;
+
+
+        height: 25vh;
+        background-color: var(--color-de-fondo-secundario);
+    }
+
+    .aficiones__icono {
+        width: 20%;
+    }
+
+    .formacion__titulo {
+        text-align: center;
+    }
+
+    .formacion__icono__container {
+        margin:  2rem 5vw;
+        height: 25vh;
+    }
+
+    .formacion__nombre,
+    .formacion__detalle {
+        margin: 0 5vw;
+    }
+
+    .proyectos {
+        margin: 5vw;
+    }
+
+    .proyectos__showcase__imagen {
+        margin: 0;
+    }
+
+    .proyectos__nombre,
+    .proyectos__descripcion,
+    .proyectos__area-botones {
+        margin: 2rem 0;
+    }
+
+    .proyectos__area-botones {
+        gap: 2vw;
+    }
+    
+    .proyectos__area-botones--boton {
+        width: 10vw;
+    }
+
+    .proyectos__showcase__imagen {
+        margin: 15vh 0 0 0;
+    }
+
+    .contacto__descripcion,
+    .contacto__titulo,
+    .contacto__formulario {
+        margin: 1rem 5vw;
+    }
+
+    .contacto__formulario {
+        gap: 5vh;
+    }
+
+    .contacto__campo {
+        margin: 0;
+    }
+
+    .contacto__boton {
+        margin: 0;
+    }
+
 }
