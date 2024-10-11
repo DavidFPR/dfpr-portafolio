@@ -401,7 +401,8 @@ footer {
 
     .formacion__icono__container {
         margin: 2rem;
-        height: 15vh;
+        height: auto;
+        padding: 2vh;
     }
 
     .formacion__nombre,
@@ -430,7 +431,7 @@ footer {
     }
 
     .contacto__formulario {
-        gap: 2vh;
+        gap: 2.5rem;
     }
 
     .contacto__campo {
