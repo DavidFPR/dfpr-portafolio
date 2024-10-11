@@ -370,23 +370,16 @@
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
       <h2 class="contacto__titulo">Contacto</h2>
-      <p class="proyectos__descripcion">
+      <p class="contacto__descripcion">
         ¿Quieres contactarme?
         Completa el siguiente formulario  y me pondré en contacto contigo lo antes posible :)
       </p>
-      <form class="contacto__formulario">
-        <input class="contacto__campo" type="text" placeholder="Nombre" />
-        <input
-          class="contacto__campo"
-          type="email"
-          placeholder="Correo Electrónico"
-        />
-        <textarea
-          class="contacto__campo contacto__campo--textarea"
-          placeholder="Mensaje"
-        ></textarea>
-        <a class="contacto__boton" type="submit">Enviar</a>
-      </form>
+      <form class="contacto__formulario" action="https://formspree.io/f/xvgopeda" method="POST">
+        <input class="contacto__campo" type="text" name="name" placeholder="Nombre" required />
+        <input class="contacto__campo" type="email" name="email" placeholder="Correo Electrónico" required />
+        <textarea class="contacto__campo contacto__campo--textarea" name="message" placeholder="Mensaje" required></textarea>
+        <button class="contacto__boton" type="submit">Enviar</button>
+    </form>
     </section>
     <footer>
       <p>Desarrollado por David Pérez</p>
