@@ -5,6 +5,7 @@
     --color-de-fondo-secundario: #273341;
     --color-de-fondo-menu: #0D1117;
     --color-de-link: #FFFFFF;
+    --color-resalte: #2A79E3;
 
     --color-letra: #F5F5F5;
 }
@@ -179,10 +180,130 @@ p {
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
+.proyectos__titulo {
+    text-align: center;
+}
+
+.proyectos__showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos__showcase__imagen {
+    width: 100%;
+    margin: 1rem;
+}
+
+.proyectos__area-botones {
+    display: flex;
+    margin: 2rem 1rem;
+    gap: 5vw;
+}
+
+.proyectos__area-botones--boton {
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    text-align: center; 
+}
+
+.proyectos__area-botones--boton1 {
+    border: 1px solid var(--color-resalte);
+    color: var(--color-resalte);
+    background-color: var(--color-de-fondo);
+    transition: all 0.3s ease;
+}
+
+.proyectos__area-botones--boton1:hover {
+    background-color: var(--color-resalte);
+    color: var(--color-letra);
+}
+
+.proyectos__area-botones--boton2 {
+    background-color: var(--color-resalte);
+    color: var(--color-letra);
+    transition: all 0.3s ease;
+}
+
+.proyectos__area-botones--boton2:hover {
+    background-color: var(--color-letra);
+    color: var(--color-resalte);
+}
+
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
 
+.contacto {
+    background-color: var(--color-de-fondo-secundario);
+    padding: 1rem 0;
+}
 
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.contacto__boton {
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    text-align: center; 
+}
+
+.contacto__campo {
+    margin: 1rem;
+    height: 5vh;
+    padding-left: 1rem;
+
+    border: none; /* Remove default border */
+    border-bottom: 3px solid transparent; /* Add an initial transparent bottom border */
+    outline: none; /* Remove default outline when focused */
+    transition: border-color 0.3s ease; /* Smooth transition for the border color */
+    
+}
+
+.contacto__campo:focus {
+    border-bottom: 3px solid var(--color-resalte); /* Change bottom border on focus */
+}
+
+.contacto__campo--textarea {
+    padding-top: 1rem;
+    height: 12vh;
+    resize: none;
+    
+}
+
+.contacto__boton {
+    background-color: var(--color-resalte);
+    color: var(--color-letra);
+    transition: all 0.3s ease;
+    margin: 1rem;
+}
+
+.contacto__boton:hover {
+    background-color: var(--color-letra);
+    color: var(--color-resalte);
+}
+
+/* -------------------------------Footer----------------------------------------------- */
+footer {
+   text-align: center;
+}
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
